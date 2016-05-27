@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		26429F041CF7A68A00D2A6EA /* google logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 26429F031CF7A68A00D2A6EA /* google logo.png */; };
-		26429F071CF7C6B800D2A6EA /* NSString_stripHtml.m in Sources */ = {isa = PBXBuildFile; fileRef = 26429F061CF7C6B800D2A6EA /* NSString_stripHtml.m */; };
 		267024261CF650100034F2D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 267024251CF650100034F2D7 /* main.m */; };
 		267024291CF650100034F2D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 267024281CF650100034F2D7 /* AppDelegate.m */; };
 		2670242F1CF650100034F2D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2670242D1CF650100034F2D7 /* Main.storyboard */; };
@@ -21,8 +20,6 @@
 
 /* Begin PBXFileReference section */
 		26429F031CF7A68A00D2A6EA /* google logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "google logo.png"; sourceTree = "<group>"; };
-		26429F051CF7C6B800D2A6EA /* NSString_stripHtml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSString_stripHtml.h; sourceTree = "<group>"; };
-		26429F061CF7C6B800D2A6EA /* NSString_stripHtml.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSString_stripHtml.m; sourceTree = "<group>"; };
 		267024211CF650100034F2D7 /* A&F.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "A&F.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		267024251CF650100034F2D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		267024271CF650100034F2D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -70,8 +67,6 @@
 			children = (
 				267024271CF650100034F2D7 /* AppDelegate.h */,
 				267024281CF650100034F2D7 /* AppDelegate.m */,
-				26429F051CF7C6B800D2A6EA /* NSString_stripHtml.h */,
-				26429F061CF7C6B800D2A6EA /* NSString_stripHtml.m */,
 				2670242D1CF650100034F2D7 /* Main.storyboard */,
 				267024411CF67C580034F2D7 /* TableViewCell.h */,
 				267024421CF67C580034F2D7 /* TableViewCell.m */,
@@ -170,7 +165,6 @@
 				267024291CF650100034F2D7 /* AppDelegate.m in Sources */,
 				267024321CF650100034F2D7 /* A_F.xcdatamodeld in Sources */,
 				267024261CF650100034F2D7 /* main.m in Sources */,
-				26429F071CF7C6B800D2A6EA /* NSString_stripHtml.m in Sources */,
 				267024431CF67C580034F2D7 /* TableViewCell.m in Sources */,
 				267024401CF650210034F2D7 /* TableViewController.m in Sources */,
 			);
