@@ -50,12 +50,13 @@
   //  string1 = [string1 stringByReplacingOccurrencesOfString:@"&gt;" withString:@">"];
   //  string1 = [string1 stringByReplacingOccurrencesOfString:@"&amp;" withString:@"&"];
    
-  //  NSLog(@"XXXXXX%@",string1);
+    NSLog(@"XXXXXX%@",string1);
     NSData *xmlData=[[NSData alloc]init];
     xmlData= [string1 dataUsingEncoding:NSUTF8StringEncoding];
     xmlParserObject =[[NSXMLParser alloc]initWithData:xmlData];
     [xmlParserObject setDelegate:self];
     [xmlParserObject parse];
+  //  NSLog(@"%@",xmlParserObject)
     
 }
 
@@ -75,8 +76,8 @@ foundCharacters:(NSString *)string{
     if ([self.element isEqualToString:@"title"]) {
         string = (NSMutableString *) [string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
         self.header = string;
-        [titleArray addObject:self.header];
-        [titleArray removeObject:@"Top Stories - Google News"];
+       [titleArray addObject:self.header];
+       [titleArray removeObject:@"Top Stories - Google News"];
      //  NSLog(@"TitleArray:%@", titleArray);
     }
     
@@ -87,7 +88,8 @@ foundCharacters:(NSString *)string{
         string = [string stringByReplacingOccurrencesOfString:@"&lt;" withString:@""];
         string = [string stringByReplacingOccurrencesOfString:@"&gt;" withString:@""];
         string = [string stringByReplacingOccurrencesOfString:@"&amp;" withString:@""];
-    
+        NSString *string2 = string;
+        NSRange range = [string2 rangeOfString:@""];
         self.descFooter = string;
         NSLog(@"Description:%@",string);
         [descriptionArray addObject:self.descFooter];
