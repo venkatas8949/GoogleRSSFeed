@@ -8,7 +8,7 @@
 
 #import "TableViewController.h"
 #import "TableViewCell.h"
-#import "NSString_stripHtml.h"
+
 
 @interface TableViewController ()
 
